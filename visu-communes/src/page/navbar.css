@@ -1,0 +1,91 @@
+/* src/Navbar.css */
+  .navbar {
+    background: black;
+    opacity: 0.7;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar ul li a:hover {
+    color: palevioletred;
+  }
+
+  .navbar .menu-icon {
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .navbar .menu-icon:hover {
+    color: #ccc;
+  }
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar .menu.active {
+    display: block;
+  }
+
+  .navbar .menu ul {
+    display: block;
+  }
+
+  .navbar .menu ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar .menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar .menu ul li a:hover {
+    color: #ccc;
+  }
+
+  .navbar .menu ul li a.active {
+    color: #ccc;
+  }
+
+  .navbar .menu ul li a.active:hover {
+    color: white;
+  }
+  .navbar-logo {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  .navbar-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+  }
+ 

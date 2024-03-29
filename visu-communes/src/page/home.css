@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap');
+
+h2 {
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+    font-size: 35px;
+    font-family: "Fanwood Text", serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
