@@ -1,0 +1,662 @@
+[
+    {
+        "nom": "Saint-\u00c9tienne",
+        "url": "https://fr.wikipedia.org/wiki/Saint-%C3%89tienne-de-Tin%C3%A9e",
+        "lat": 44.258,
+        "lon": 6.925
+    },
+    {
+        "nom": "Saint-\u00c9tienne-de-Tin\u00e9e",
+        "url": "https://fr.wikipedia.org/wiki/Saint-%C3%89tienne-de-Tin%C3%A9e",
+        "lat": 44.258,
+        "lon": 6.925
+    },
+    {
+        "nom": "Saint-Martin-Lantosque",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Martin-V%C3%A9subie",
+        "lat": 44.069,
+        "lon": 7.257
+    },
+    {
+        "nom": "Saint-Martin-V\u00e9subie",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Martin-V%C3%A9subie",
+        "lat": 44.069,
+        "lon": 7.257
+    },
+    {
+        "nom": "Roquebrune",
+        "url": "https://fr.wikipedia.org/wiki/Cabb%C3%A9-Roquebrune",
+        "lat": 43.763,
+        "lon": 7.463
+    },
+    {
+        "nom": "Cabb\u00e9-Roquebrune",
+        "url": "https://fr.wikipedia.org/wiki/Roquebrune-Cap-Martin",
+        "lat": 43.763,
+        "lon": 7.463
+    },
+    {
+        "nom": "Tourrette",
+        "url": "https://fr.wikipedia.org/wiki/Tourrette-Levens",
+        "lat": 43.788,
+        "lon": 7.277
+    },
+    {
+        "nom": "Tourrette-Levens",
+        "url": "https://fr.wikipedia.org/wiki/Tourrette-Levens",
+        "lat": 43.788,
+        "lon": 7.277
+    },
+    {
+        "nom": "Berre",
+        "url": "https://fr.wikipedia.org/wiki/Berre-des-Alpes",
+        "lat": 43.831,
+        "lon": 7.33
+    },
+    {
+        "nom": "Berre-des-Alpes",
+        "url": "https://fr.wikipedia.org/wiki/Berre-les-Alpes",
+        "lat": 43.831,
+        "lon": 7.33
+    },
+    {
+        "nom": "Saint-Laurent",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Laurent",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Saint-Laurent-du-Var",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Laurent-du-Var",
+        "lat": 43.668,
+        "lon": 7.188
+    },
+    {
+        "nom": "Tourrettes-de-Vence",
+        "url": "https://fr.wikipedia.org/wiki/Tourrettes-de-Vence",
+        "lat": 43.717,
+        "lon": 7.061
+    },
+    {
+        "nom": "Tourrettes-sur-Loup",
+        "url": "https://fr.wikipedia.org/wiki/Tourrettes-sur-Loup",
+        "lat": 43.717,
+        "lon": 7.061
+    },
+    {
+        "nom": "Saint-Jean",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Jean",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Saint-Jean-Cap-Ferrat",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Jean-Cap-Ferrat",
+        "lat": 43.683,
+        "lon": 7.333
+    },
+    {
+        "nom": "La Boll\u00e8ne",
+        "url": "https://fr.wikipedia.org/wiki/La%20Boll%C3%A8ne-V%C3%A9subie",
+        "lat": 43.991,
+        "lon": 7.332
+    },
+    {
+        "nom": "La Boll\u00e8ne-V\u00e9subie",
+        "url": "https://fr.wikipedia.org/wiki/La%20Boll%C3%A8ne-V%C3%A9subie",
+        "lat": 43.991,
+        "lon": 7.332
+    },
+    {
+        "nom": "Beaulieu",
+        "url": "https://fr.wikipedia.org/wiki/Beaulieu",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Beaulieu-sur-Mer",
+        "url": "https://fr.wikipedia.org/wiki/Beaulieu-sur-Mer",
+        "lat": 43.705,
+        "lon": 7.33
+    },
+    {
+        "nom": "Tou\u00ebt-de-Beuil",
+        "url": "https://fr.wikipedia.org/wiki/Tou%C3%ABt-sur-Var",
+        "lat": 43.948,
+        "lon": 7.007
+    },
+    {
+        "nom": "Tou\u00ebt-sur-Var",
+        "url": "https://fr.wikipedia.org/wiki/Tou%C3%ABt-sur-Var",
+        "lat": 43.948,
+        "lon": 7.007
+    },
+    {
+        "nom": "Roquebrune-Cap-Martin",
+        "url": "https://fr.wikipedia.org/wiki/Roquebrune-Cap-Martin",
+        "lat": 43.763,
+        "lon": 7.463
+    },
+    {
+        "nom": "Saint-Paul-du-Var",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Paul",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Saint-Paul",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Paul",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "La Roquette",
+        "url": "https://fr.wikipedia.org/wiki/La%20Roquette",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "La Roquette-sur-Siagne",
+        "url": "https://fr.wikipedia.org/wiki/La%20Roquette-sur-Siagne",
+        "lat": 43.581,
+        "lon": 6.956
+    },
+    {
+        "nom": "Cagnes",
+        "url": "https://fr.wikipedia.org/wiki/Cagnes-sur-Mer",
+        "lat": 43.664,
+        "lon": 7.149
+    },
+    {
+        "nom": "Cagnes-sur-Mer",
+        "url": "https://fr.wikipedia.org/wiki/Cagnes-sur-Mer",
+        "lat": 43.664,
+        "lon": 7.149
+    },
+    {
+        "nom": "La Colle",
+        "url": "https://fr.wikipedia.org/wiki/La%20Colle",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "La Colle-sur-Loup",
+        "url": "https://fr.wikipedia.org/wiki/La%20Colle-sur-Loup",
+        "lat": 43.687,
+        "lon": 7.104
+    },
+    {
+        "nom": "Villars-du-Var",
+        "url": "https://fr.wikipedia.org/wiki/Villars-sur-Var",
+        "lat": 43.938,
+        "lon": 7.098
+    },
+    {
+        "nom": "Villars-sur-Var",
+        "url": "https://fr.wikipedia.org/wiki/Villars-sur-Var",
+        "lat": 43.938,
+        "lon": 7.098
+    },
+    {
+        "nom": "Saint-C\u00e9zaire",
+        "url": "https://fr.wikipedia.org/wiki/Saint-C%C3%A9zaire-sur-Siagne",
+        "lat": 43.65,
+        "lon": 6.794
+    },
+    {
+        "nom": "Saint-C\u00e9zaire-sur-Siagne",
+        "url": "https://fr.wikipedia.org/wiki/Saint-C%C3%A9zaire-sur-Siagne",
+        "lat": 43.65,
+        "lon": 6.794
+    },
+    {
+        "nom": "Roquefort",
+        "url": "https://fr.wikipedia.org/wiki/Roquefort",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Roquefort-les-Pins",
+        "url": "https://fr.wikipedia.org/wiki/Roquefort-les-Pins",
+        "lat": 43.666,
+        "lon": 7.051
+    },
+    {
+        "nom": "Revest",
+        "url": "https://fr.wikipedia.org/wiki/Revest",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Revest-les-Roches",
+        "url": "https://fr.wikipedia.org/wiki/Revest-les-Roches",
+        "lat": 43.881,
+        "lon": 7.158
+    },
+    {
+        "nom": "B\u00e9zaudun",
+        "url": "https://fr.wikipedia.org/wiki/B%C3%A9zaudun-les-Alpes",
+        "lat": 43.808,
+        "lon": 7.097
+    },
+    {
+        "nom": "B\u00e9zaudun-les-Alpes",
+        "url": "https://fr.wikipedia.org/wiki/B%C3%A9zaudun-les-Alpes",
+        "lat": 43.808,
+        "lon": 7.097
+    },
+    {
+        "nom": "Auribeau",
+        "url": "https://fr.wikipedia.org/wiki/Auribeau-sur-Siagne",
+        "lat": 43.602,
+        "lon": 6.912
+    },
+    {
+        "nom": "Auribeau-sur-Siagne",
+        "url": "https://fr.wikipedia.org/wiki/Auribeau-sur-Siagne",
+        "lat": 43.602,
+        "lon": 6.912
+    },
+    {
+        "nom": "Breil",
+        "url": "https://fr.wikipedia.org/wiki/Breil-sur-Roya",
+        "lat": 43.938,
+        "lon": 7.515
+    },
+    {
+        "nom": "Breil-sur-Roya",
+        "url": "https://fr.wikipedia.org/wiki/Breil-sur-Roya",
+        "lat": 43.938,
+        "lon": 7.515
+    },
+    {
+        "nom": "La Croix",
+        "url": "https://fr.wikipedia.org/wiki/La%20Croix-sur-Roudoule",
+        "lat": 43.988,
+        "lon": 6.876
+    },
+    {
+        "nom": "La Croix-sur-Roudoule",
+        "url": "https://fr.wikipedia.org/wiki/La%20Croix-sur-Roudoule",
+        "lat": 43.988,
+        "lon": 6.876
+    },
+    {
+        "nom": "La Trinit\u00e9-Victor",
+        "url": "https://fr.wikipedia.org/wiki/La%20Trinit%C3%A9-Victor",
+        "lat": 43.742,
+        "lon": 7.315
+    },
+    {
+        "nom": "La Trinit\u00e9",
+        "url": "https://fr.wikipedia.org/wiki/La%20Trinit%C3%A9",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Saint-Vallier",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Vallier-de-Thiey",
+        "lat": 43.7,
+        "lon": 6.848
+    },
+    {
+        "nom": "Saint-Vallier-de-Thiey",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Vallier-de-Thiey",
+        "lat": 43.7,
+        "lon": 6.848
+    },
+    {
+        "nom": "Saint-Sauveur",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Sauveur-sur-Tin%C3%A9e",
+        "lat": 44.085,
+        "lon": 7.106
+    },
+    {
+        "nom": "Saint-Sauveur-sur-Tin\u00e9e",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Sauveur-sur-Tin%C3%A9e",
+        "lat": 44.085,
+        "lon": 7.106
+    },
+    {
+        "nom": "Le Bar",
+        "url": "https://fr.wikipedia.org/wiki/Le%20Bar-sur-Loup",
+        "lat": 43.702,
+        "lon": 6.99
+    },
+    {
+        "nom": "Le Bar-sur-Loup",
+        "url": "https://fr.wikipedia.org/wiki/Le%20Bar-sur-Loup",
+        "lat": 43.702,
+        "lon": 6.99
+    },
+    {
+        "nom": "Ch\u00e2teauneuf",
+        "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teauneuf",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Ch\u00e2teauneuf-de-Contes",
+        "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teauneuf-Villevieille",
+        "lat": 43.809,
+        "lon": 7.297
+    },
+    {
+        "nom": "La Roquette-sur-Var",
+        "url": "https://fr.wikipedia.org/wiki/La%20Roquette-sur-Var",
+        "lat": 43.829,
+        "lon": 7.2
+    },
+    {
+        "nom": "Mandelieu",
+        "url": "https://fr.wikipedia.org/wiki/Mandelieu",
+        "lat": 43.546,
+        "lon": 6.938
+    },
+    {
+        "nom": "Mandelieu-la-Napoule",
+        "url": "https://fr.wikipedia.org/wiki/Mandelieu-la-Napoule",
+        "lat": 43.546,
+        "lon": 6.938
+    },
+    {
+        "nom": "Roquest\u00e9ron-Puget",
+        "url": "https://fr.wikipedia.org/wiki/Roquest%C3%A9ron",
+        "lat": 43.875,
+        "lon": 7.005
+    },
+    {
+        "nom": "Roquest\u00e9ron",
+        "url": "https://fr.wikipedia.org/wiki/Roquest%C3%A9ron",
+        "lat": 43.875,
+        "lon": 7.005
+    },
+    {
+        "nom": "Villefranche",
+        "url": "https://fr.wikipedia.org/wiki/Villefranche",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Villefranche-sur-Mer",
+        "url": "https://fr.wikipedia.org/wiki/Villefranche-sur-Mer",
+        "lat": 43.705,
+        "lon": 7.312
+    },
+    {
+        "nom": "Ch\u00e2teauneuf-Villevieille",
+        "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teauneuf-Villevieille",
+        "lat": 43.809,
+        "lon": 7.297
+    },
+    {
+        "nom": "Berre-les-Alpes",
+        "url": "https://fr.wikipedia.org/wiki/Berre-les-Alpes",
+        "lat": 43.831,
+        "lon": 7.33
+    },
+    {
+        "nom": "Saint-Andr\u00e9",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Andr%C3%A9-de-la-Roche",
+        "lat": 43.741,
+        "lon": 7.288
+    },
+    {
+        "nom": "Saint-Andr\u00e9-de-la-Roche",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Andr%C3%A9-de-la-Roche",
+        "lat": 43.741,
+        "lon": 7.288
+    },
+    {
+        "nom": "Saint-Paul-de-Vence",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Paul-de-Vence",
+        "lat": 43.697,
+        "lon": 7.123
+    },
+    {
+        "nom": "Roquest\u00e9ron-Grasse",
+        "url": "https://fr.wikipedia.org/wiki/La%20Roque-en-Provence",
+        "lat": 43.872,
+        "lon": 7.006
+    },
+    {
+        "nom": "La Roque-en-Provence",
+        "url": "https://fr.wikipedia.org/wiki/La%20Roque-en-Provence",
+        "lat": 43.872,
+        "lon": 7.006
+    },
+    {
+        "nom": "Th\u00e9oule-sur-Mer",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9oule-sur-Mer",
+        "lat": 43.508,
+        "lon": 6.941
+    },
+    {
+        "nom": "Blausasc",
+        "url": "https://fr.wikipedia.org/wiki/Blausasc",
+        "lat": 43.805,
+        "lon": 7.366
+    },
+    {
+        "nom": "Peille",
+        "url": "https://fr.wikipedia.org/wiki/Peille",
+        "lat": 43.804,
+        "lon": 7.403
+    },
+    {
+        "nom": "Bendejun",
+        "url": "https://fr.wikipedia.org/wiki/Bendejun",
+        "lat": 43.838,
+        "lon": 7.291
+    },
+    {
+        "nom": "Cantaron",
+        "url": "https://fr.wikipedia.org/wiki/Cantaron",
+        "lat": 43.763,
+        "lon": 7.319
+    },
+    {
+        "nom": "Ch\u00e2teauneuf-Contes",
+        "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teauneuf-Contes",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Sp\u00e9rac\u00e8des",
+        "url": "https://fr.wikipedia.org/wiki/Sp%C3%A9rac%C3%A8des",
+        "lat": 43.649,
+        "lon": 6.859
+    },
+    {
+        "nom": "Cabris",
+        "url": "https://fr.wikipedia.org/wiki/Cabris",
+        "lat": 43.657,
+        "lon": 6.874
+    },
+    {
+        "nom": "Cap-d'Ail",
+        "url": "https://fr.wikipedia.org/wiki/Cap-d%27Ail",
+        "lat": 43.722,
+        "lon": 7.406
+    },
+    {
+        "nom": "La Turbie",
+        "url": "https://fr.wikipedia.org/wiki/La%20Turbie",
+        "lat": 43.746,
+        "lon": 7.402
+    },
+    {
+        "nom": "Beausoleil",
+        "url": "https://fr.wikipedia.org/wiki/Beausoleil",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Castagniers",
+        "url": "https://fr.wikipedia.org/wiki/Castagniers",
+        "lat": 43.792,
+        "lon": 7.232
+    },
+    {
+        "nom": "Colomars",
+        "url": "https://fr.wikipedia.org/wiki/Colomars",
+        "lat": 43.764,
+        "lon": 7.223
+    },
+    {
+        "nom": "Aspremont",
+        "url": "https://fr.wikipedia.org/wiki/Aspremont",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Tourette-du-Ch\u00e2teau",
+        "url": "https://fr.wikipedia.org/wiki/Tourette-du-Ch%C3%A2teau",
+        "lat": 43.883,
+        "lon": 7.143
+    },
+    {
+        "nom": "Tourette-Revest",
+        "url": "https://fr.wikipedia.org/wiki/Tourette-Revest",
+        "lat": 43.883,
+        "lon": 7.143
+    },
+    {
+        "nom": "Fontan",
+        "url": "https://fr.wikipedia.org/wiki/Fontan",
+        "lat": 44.005,
+        "lon": 7.554
+    },
+    {
+        "nom": "Saorge",
+        "url": "https://fr.wikipedia.org/wiki/Saorge",
+        "lat": 43.988,
+        "lon": 7.553
+    },
+    {
+        "nom": "Peymeinade",
+        "url": "https://fr.wikipedia.org/wiki/Peymeinade",
+        "lat": 43.643,
+        "lon": 6.877
+    },
+    {
+        "nom": "Saint-Martin-du-Var",
+        "url": "https://fr.wikipedia.org/wiki/Saint-Martin-du-Var",
+        "lat": 43.823,
+        "lon": 7.193
+    },
+    {
+        "nom": "La Roquette-Saint-Martin",
+        "url": "https://fr.wikipedia.org/wiki/La%20Roquette-Saint-Martin",
+        "lat": 43.829,
+        "lon": 7.2
+    },
+    {
+        "nom": "\u00c8ze",
+        "url": "https://fr.wikipedia.org/wiki/%C3%88ze",
+        "lat": 43.729,
+        "lon": 7.362
+    },
+    {
+        "nom": "Castillon",
+        "url": "https://fr.wikipedia.org/wiki/Castillon",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Sospel",
+        "url": "https://fr.wikipedia.org/wiki/Sospel",
+        "lat": 43.878,
+        "lon": 7.449
+    },
+    {
+        "nom": "Le Rouret",
+        "url": "https://fr.wikipedia.org/wiki/Le%20Rouret",
+        "lat": 43.675,
+        "lon": 7.006
+    },
+    {
+        "nom": "Ch\u00e2teauneuf-Grasse",
+        "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teauneuf-Grasse",
+        "lat": 43.676,
+        "lon": 6.976
+    },
+    {
+        "nom": "Valderoure",
+        "url": "https://fr.wikipedia.org/wiki/Valderoure",
+        "lat": 43.797,
+        "lon": 6.711
+    },
+    {
+        "nom": "S\u00e9ranon",
+        "url": "https://fr.wikipedia.org/wiki/S%C3%A9ranon",
+        "lat": 43.775,
+        "lon": 6.702
+    },
+    {
+        "nom": "Mouans-Sartoux",
+        "url": "https://fr.wikipedia.org/wiki/Mouans-Sartoux",
+        "lat": 43.62,
+        "lon": 6.972
+    },
+    {
+        "nom": "Mouans",
+        "url": "https://fr.wikipedia.org/wiki/Mouans",
+        "lat": 43.62,
+        "lon": 6.972
+    },
+    {
+        "nom": "Sartoux",
+        "url": "https://fr.wikipedia.org/wiki/Sartoux",
+        "lat": 43.62,
+        "lon": 6.972
+    },
+    {
+        "nom": "Le Broc",
+        "url": "https://fr.wikipedia.org/wiki/Le%20Broc",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Dosfraires",
+        "url": "https://fr.wikipedia.org/wiki/Dosfraires",
+        "lat": 43.81,
+        "lon": 7.171
+    },
+    {
+        "nom": "Clermont",
+        "url": "https://fr.wikipedia.org/wiki/Clermont",
+        "lat": null,
+        "lon": null
+    },
+    {
+        "nom": "Les Valettes",
+        "url": "https://fr.wikipedia.org/wiki/Les%20Valettes",
+        "lat": 43.717,
+        "lon": 7.061
+    },
+    {
+        "nom": "Le Puget-Saint-Laurent",
+        "url": "https://fr.wikipedia.org/wiki/Le%20Puget-Saint-Laurent",
+        "lat": 43.668,
+        "lon": 7.188
+    },
+    {
+        "nom": "Vence",
+        "url": "https://fr.wikipedia.org/wiki/Vence",
+        "lat": 43.723,
+        "lon": 7.112
+    },
+    {
+        "nom": "Malvans",
+        "url": "https://fr.wikipedia.org/wiki/Malvans",
+        "lat": 43.723,
+        "lon": 7.112
+    },
+    {
+        "nom": "Fougassi\u00e8res",
+        "url": "https://fr.wikipedia.org/wiki/Fougassi%C3%A8res",
+        "lat": 43.81,
+        "lon": 7.171
+    }
+]
