@@ -1,0 +1,23 @@
+.map-container {
+    width: 100%;
+    height: calc(100vh - 400px); /* Replace 100px with the total height of the other elements */
+    position: relative; /* Needed for Leaflet */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}

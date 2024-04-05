@@ -2,7 +2,7 @@ import mysql.connector
 import json
 
 # Create a connection to the database
-cnx = mysql.connector.connect(user='root', password='chop1234',
+cnx = mysql.connector.connect(user='root', password='CHANGE_ME',
                               host='localhost',
                               database='projet_humanite')
 

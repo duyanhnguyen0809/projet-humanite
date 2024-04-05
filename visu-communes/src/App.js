@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Modifications from "./pages/Modifications";
+import Fusions from "./pages/Fusions";
+import Creations from "./pages/Creations";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Modifications" element={<Modifications />} />
+        <Route path="/Fusions" element={<Fusions />} />
+        <Route path="/Creations" element={<Creations />} />
       </Routes>
     </Router>
   );

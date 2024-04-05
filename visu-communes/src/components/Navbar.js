@@ -47,6 +47,16 @@ function Navbar() {
                   <FontAwesomeIcon icon={faFaceSmile} /> Modifications
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/fusions" className="nav-links">
+                  <FontAwesomeIcon icon={faFaceSmile} /> Fusions
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/creations" className="nav-links">
+                  <FontAwesomeIcon icon={faFaceSmile} /> Creations
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
