@@ -3,23 +3,23 @@
     background: black;
     opacity: 0.7;
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 999;
     color: white;
     padding: 10px 0;
-    text-align: center;
   }
   
-
   .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
   }
 
   .navbar ul li {
@@ -33,7 +33,8 @@
   }
 
   .navbar ul li a:hover {
-    color: palevioletred;
+    color: #686de0;
+    text-shadow: 0 0 5px #686de0, 0 0 10px #686de0, 0 0 15px #686de0, 0 0 20px #686de0;
   }
 
   .navbar .menu-icon {
@@ -86,6 +87,17 @@
   .navbar-logo a {
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    
   }
- 
+  .navbar-logo a:hover {
+    color: palevioletred;
+    text-shadow: 0 0 5px palevioletred, 0 0 10px palevioletred;
+  }
+   .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    margin-left: 20px;
+    margin-bottom: 10px;
+   }
