@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import './Calendar.css';
-
+import "./Calendar.css";
 
 const new_marker = process.env.PUBLIC_URL + "/icons/new_marker.svg";
 const old_marker = process.env.PUBLIC_URL + "/icons/old_marker.svg";
@@ -111,25 +110,44 @@ function Modifications() {
           justifyContent: "center",
         }}
       >
-        <div style={{
-          flexDirection: "column",
-          display: "flex",
-          gap: "10px",
-          justifyContent: "center",
-        }}>
-          <input
-            type="date"
-            value={startDate}
-            onChange={(e) => setStartDate(e.target.value)}
-            className="date-input"
-          />
-          <input
-            type="date"
-            value={endDate}
-            onChange={(e) => setEndDate(e.target.value)}
-            className="date-input"
-          />
-          <button onClick={handleClick}>Show Changes</button>
+        <div
+          style={{
+            flexDirection: "column",
+            display: "flex",
+            gap: "10px",
+            justifyContent: "center",
+          }}
+        >
+          <div>
+            <label style={{ color: "white",fontWeight:"bold",fontSize:"1rem"}}>Du : </label>
+            <input
+              type="date"
+              value={startDate}
+              onChange={(e) => setStartDate(e.target.value)}
+              className="date-input"
+            />
+          </div>
+          <div>
+            <label style={{ color: "white" ,fontWeight:"bold",fontSize:"1rem"}}>Au : </label>
+            <input
+              type="date"
+              value={endDate}
+              onChange={(e) => setEndDate(e.target.value)}
+              className="date-input"
+            />
+          </div>
+          <button
+            style={{
+              backgroundColor: "#1dd1a1",
+              color: "white",
+              padding: "10px",
+              borderRadius: "5px",
+              marginTop: "10px",
+            }}
+            onClick={handleClick}
+          >
+            Show Changes
+          </button>
         </div>
       </div>
       {showMap && (

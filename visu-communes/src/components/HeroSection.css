@@ -33,6 +33,8 @@ video {
   }
   
   .hero-btns {
+    display: flex;
+    flex-direction: row;
     margin-top: 32px;
   }
   
