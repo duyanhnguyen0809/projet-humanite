@@ -367,17 +367,17 @@ def get_coordinates(url):
 
     return latitude, longitude
 
-# for i in range(len(communes)):
-#     url = communes[i]['url']
-#     lat, lon = get_coordinates(url)
-#     communes[i]['lat'] = lat
-#     communes[i]['lon'] = lon
+for i in range(len(communes)):
+    url = communes[i]['url']
+    lat, lon = get_coordinates(url)
+    communes[i]['lat'] = lat
+    communes[i]['lon'] = lon
 
-# # Save the list of commune names with URLs and coordinates to a JSON file
-# with open('communes.json', 'w') as f:
-#     json.dump(communes, f)
+# Save the list of commune names with URLs and coordinates to a JSON file
+with open('communes.json', 'w') as f:
+    json.dump(communes, f)
 
-# # Print the list of commune names with URLs and coordinates
-# for commune in communes:
-#     print(commune)
+# Print the list of commune names with URLs and coordinates
+for commune in communes:
+    print(commune)
 
