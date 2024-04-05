@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "leaflet": "^1.9.4"
+    "leaflet": "^1.9.4",
+    "react-bootstrap-table-next": "^4.0.3",
+    "react-bootstrap-table2-paginator": "^2.1.2"
   }
 }

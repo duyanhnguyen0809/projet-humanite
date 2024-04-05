@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "./Calendar.css";
-import "./Modifications.css";
+import "./Fusions.css";
 import { renderToString } from "react-dom/server";
+
 const BindPopupOld = ({ nom, url }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
@@ -21,7 +22,7 @@ const BindPopupNew = ({ nom, url }) => {
   );
 };
 
-function Modifications() {
+function Fusions() {
   const new_marker = process.env.PUBLIC_URL + "/icons/new_marker.svg";
   const old_marker = process.env.PUBLIC_URL + "/icons/old_marker.svg";
   const [startDate, setStartDate] = useState("");
@@ -35,8 +36,7 @@ function Modifications() {
 
   const handleClick = () => {
     fetch(
-      process.env.REACT_APP_GLOBAL_PORT +
-        `/api/modifications/${startDate}/${endDate}`
+      process.env.REACT_APP_GLOBAL_PORT + `/api/fusions/${startDate}/${endDate}`
     )
       .then((response) => {
         if (!response.ok) {
@@ -45,13 +45,15 @@ function Modifications() {
         return response.json();
       })
       .then((data) => setEvents(data))
+      .then((data) => console.log(data))
       .catch((error) => console.error("Error:", error));
     setShowMap(true);
   };
+
   useEffect(() => {
     const fetchCommunes = async () => {
       const uniqueNewIds = [
-        ...new Set(events.map((event) => event.id_nouveau)),
+        ...new Set(events.map((event) => event.id_nouv_com)),
       ];
       const newCommunes = await Promise.all(
         uniqueNewIds.map(async (id) => {
@@ -69,7 +71,9 @@ function Modifications() {
 
   useEffect(() => {
     const fetchCommunes = async () => {
-      const uniqueOldIds = [...new Set(events.map((event) => event.id_ancien))];
+      const uniqueOldIds = [
+        ...new Set(events.map((event) => event.id_reuni_com)),
+      ];
       const oldCommunes = await Promise.all(
         uniqueOldIds.map(async (id) => {
           const response = await fetch(
@@ -80,13 +84,14 @@ function Modifications() {
         })
       );
       setAncienneCommunes(oldCommunes);
+      console.log(oldCommunes);
     };
     fetchCommunes();
   }, [events]);
   useEffect(() => {
     const initializeMap = () => {
       if (showMap && !map) {
-        const newMap = L.map(mapContainer.current).setView([43.92, 7.17], 7);
+        const newMap = L.map(mapContainer.current).setView([43.92, 7.17], 9);
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
           newMap
         );
@@ -139,7 +144,7 @@ function Modifications() {
             alignItems: "center",
           }}
         >
-          <h1 style={{ color: "white" }}>MODIFICATIONS DES COMMUNES</h1>
+          <h1 style={{ color: "white" }}>FUSIONS DES COMMUNES</h1>
           <input
             type="date"
             value={startDate}
@@ -161,21 +166,25 @@ function Modifications() {
           <thead>
             <tr>
               <th>Nouvelle Commune</th>
-              <th>Ancienne Commune</th>
+              <th>Commune Réunies</th>
               <th>Date</th>
             </tr>
           </thead>
           <tbody>
             {events.map((event, index) => {
               const newCommune = nouvelleCommunes.find(
-                (commune) => commune.id === event.id_nouveau
+                (commune) => commune.id === event.id_nouv_com
               );
               const reunitedCommune = ancienneCommunes.find(
-                (commune) => commune.id === event.id_ancien
+                (commune) => commune.id === event.id_reuni_com
               );
               return (
                 <tr key={index}>
-                  <td>{newCommune ? newCommune.nom : "Not found"}</td>
+                  {index % 2 === 0 && (
+                    <td rowSpan="2">
+                      {newCommune ? newCommune.nom : "Not found"}
+                    </td>
+                  )}
                   <td>{reunitedCommune ? reunitedCommune.nom : "Not found"}</td>
                   <td>{new Date(event.date).toLocaleDateString()}</td>
                 </tr>
@@ -188,4 +197,4 @@ function Modifications() {
   );
 }
 
-export default Modifications;
+export default Fusions;

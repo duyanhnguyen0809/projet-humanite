@@ -2,12 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "./Calendar.css";
-import "./Modifications.css";
+import "./Creations.css";
 import { renderToString } from "react-dom/server";
 const BindPopupOld = ({ nom, url }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
-      <div>Ancienne commune: </div>
+      <div>Commune affectée: </div>
       <a href={url}>{nom}</a>
     </div>
   );
@@ -15,13 +15,13 @@ const BindPopupOld = ({ nom, url }) => {
 const BindPopupNew = ({ nom, url }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
-      <div>Nouvelle commune: </div>
+      <div>Commune créée: </div>
       <a href={url}>{nom}</a>
     </div>
   );
 };
 
-function Modifications() {
+function Creations() {
   const new_marker = process.env.PUBLIC_URL + "/icons/new_marker.svg";
   const old_marker = process.env.PUBLIC_URL + "/icons/old_marker.svg";
   const [startDate, setStartDate] = useState("");
@@ -36,7 +36,7 @@ function Modifications() {
   const handleClick = () => {
     fetch(
       process.env.REACT_APP_GLOBAL_PORT +
-        `/api/modifications/${startDate}/${endDate}`
+        `/api/creations/${startDate}/${endDate}`
     )
       .then((response) => {
         if (!response.ok) {
@@ -48,10 +48,11 @@ function Modifications() {
       .catch((error) => console.error("Error:", error));
     setShowMap(true);
   };
+
   useEffect(() => {
     const fetchCommunes = async () => {
       const uniqueNewIds = [
-        ...new Set(events.map((event) => event.id_nouveau)),
+        ...new Set(events.map((event) => event.id_com_cree)),
       ];
       const newCommunes = await Promise.all(
         uniqueNewIds.map(async (id) => {
@@ -69,7 +70,9 @@ function Modifications() {
 
   useEffect(() => {
     const fetchCommunes = async () => {
-      const uniqueOldIds = [...new Set(events.map((event) => event.id_ancien))];
+      const uniqueOldIds = [
+        ...new Set(events.map((event) => event.id_com_affectee)),
+      ];
       const oldCommunes = await Promise.all(
         uniqueOldIds.map(async (id) => {
           const response = await fetch(
@@ -119,7 +122,6 @@ function Modifications() {
       });
     }
   }, [map, ancienneCommunes, nouvelleCommunes, new_marker, old_marker]);
-
   return (
     <div>
       <div
@@ -139,7 +141,7 @@ function Modifications() {
             alignItems: "center",
           }}
         >
-          <h1 style={{ color: "white" }}>MODIFICATIONS DES COMMUNES</h1>
+          <h1 style={{ color: "white" }}>CREATIONS DES COMMUNES</h1>
           <input
             type="date"
             value={startDate}
@@ -155,23 +157,24 @@ function Modifications() {
           <button onClick={handleClick}>Show Changes</button>
         </div>
       </div>
+
       {showMap && <div ref={mapContainer} className="map-container"></div>}
       {showMap && (
         <table className="table">
           <thead>
             <tr>
-              <th>Nouvelle Commune</th>
-              <th>Ancienne Commune</th>
+              <th>Commune créée</th>
+              <th>Commune affectée</th>
               <th>Date</th>
             </tr>
           </thead>
           <tbody>
             {events.map((event, index) => {
               const newCommune = nouvelleCommunes.find(
-                (commune) => commune.id === event.id_nouveau
+                (commune) => commune.id === event.id_com_cree
               );
               const reunitedCommune = ancienneCommunes.find(
-                (commune) => commune.id === event.id_ancien
+                (commune) => commune.id === event.id_com_affectee
               );
               return (
                 <tr key={index}>
@@ -188,4 +191,4 @@ function Modifications() {
   );
 }
 
-export default Modifications;
+export default Creations;

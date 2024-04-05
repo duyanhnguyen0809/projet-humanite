@@ -57,3 +57,31 @@ app.get("/api/modifications/:startDate/:endDate", (req, res) => {
   );
 });
 
+
+app.get("/api/fusions/:startDate/:endDate", (req, res) => {
+  const { startDate, endDate } = req.params;
+  db.query(
+    "SELECT * FROM fusions WHERE date >= ? AND date <= ?",
+    [startDate, endDate],
+    (err, results) => {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+      res.json(results);
+    }
+  );
+});
+
+app.get("/api/creations/:startDate/:endDate", (req, res) => {
+  const { startDate, endDate } = req.params;
+  db.query(
+    "SELECT * FROM creations WHERE date >= ? AND date <= ?",
+    [startDate, endDate],
+    (err, results) => {
+      if (err) {
+        return res.status(500).json({ error: err.message });
+      }
+      res.json(results);
+    }
+  );
+});
