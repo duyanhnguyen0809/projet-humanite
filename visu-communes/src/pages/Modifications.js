@@ -1,12 +1,29 @@
 import React, { useState, useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import './Calendar.css';
+import "./Calendar.css";
+import "./Modifications.css";
+import { renderToString } from "react-dom/server";
+const BindPopupOld = ({ nom, url }) => {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
+      <div>Ancienne commune: </div>
+      <a href={url}>{nom}</a>
+    </div>
+  );
+};
+const BindPopupNew = ({ nom, url }) => {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
+      <div>Nouvelle commune: </div>
+      <a href={url}>{nom}</a>
+    </div>
+  );
+};
 
-
-const new_marker = process.env.PUBLIC_URL + "/icons/new_marker.svg";
-const old_marker = process.env.PUBLIC_URL + "/icons/old_marker.svg";
 function Modifications() {
+  const new_marker = process.env.PUBLIC_URL + "/icons/new_marker.svg";
+  const old_marker = process.env.PUBLIC_URL + "/icons/old_marker.svg";
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
   const [events, setEvents] = useState([]);
@@ -69,10 +86,7 @@ function Modifications() {
   useEffect(() => {
     const initializeMap = () => {
       if (showMap && !map) {
-        const newMap = L.map(mapContainer.current).setView(
-          [46.603354, 1.888334],
-          5
-        );
+        const newMap = L.map(mapContainer.current).setView([43.92, 7.17], 7);
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
           newMap
         );
@@ -82,6 +96,7 @@ function Modifications() {
 
     initializeMap();
   }, [map, showMap]);
+
   useEffect(() => {
     if (map) {
       ancienneCommunes.forEach((commune) => {
@@ -89,14 +104,18 @@ function Modifications() {
           icon: L.icon({ iconUrl: old_marker, iconSize: [30, 30] }),
         })
           .addTo(map)
-          .bindPopup(`<a href="${commune.url}">${commune.nom}</a>`);
+          .bindPopup(
+            renderToString(<BindPopupOld nom={commune.nom} url={commune.url} />)
+          );
       });
       nouvelleCommunes.forEach((commune) => {
         L.marker([commune.lat, commune.lon], {
           icon: L.icon({ iconUrl: new_marker, iconSize: [30, 30] }),
         })
           .addTo(map)
-          .bindPopup(`<a href="${commune.url}">${commune.nom}</a>`);
+          .bindPopup(
+            renderToString(<BindPopupNew nom={commune.nom} url={commune.url} />)
+          );
       });
     }
   }, [map, ancienneCommunes, nouvelleCommunes]);
@@ -111,12 +130,14 @@ function Modifications() {
           justifyContent: "center",
         }}
       >
-        <div style={{
-          flexDirection: "column",
-          display: "flex",
-          gap: "10px",
-          justifyContent: "center",
-        }}>
+        <div
+          style={{
+            flexDirection: "column",
+            display: "flex",
+            gap: "10px",
+            justifyContent: "center",
+          }}
+        >
           <input
             type="date"
             value={startDate}
@@ -132,12 +153,7 @@ function Modifications() {
           <button onClick={handleClick}>Show Changes</button>
         </div>
       </div>
-      {showMap && (
-        <div
-          ref={mapContainer}
-          style={{ height: "500px", width: "100%" }}
-        ></div>
-      )}
+      {showMap && <div ref={mapContainer} className="map-container"></div>}
     </div>
   );
 }

@@ -1,0 +1,5 @@
+.map-container {
+    width: 100%;
+    height: calc(100vh - 400px); /* Replace 100px with the total height of the other elements */
+    position: relative; /* Needed for Leaflet */
+}
