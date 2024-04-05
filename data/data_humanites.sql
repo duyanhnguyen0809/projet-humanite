@@ -14,11 +14,60 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Data exporting was unselected.
+
+-- Dumping database structure for projet_humanite
+CREATE DATABASE IF NOT EXISTS `projet_humanite` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+USE `projet_humanite`;
+
+-- Dumping structure for table projet_humanite.communes
+CREATE TABLE IF NOT EXISTS `communes` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nom` varchar(50) NOT NULL,
+  `url` varchar(2048) DEFAULT NULL,
+  `lat` double DEFAULT NULL,
+  `lon` double DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Data exporting was unselected.
 
+-- Dumping structure for table projet_humanite.creations
+CREATE TABLE IF NOT EXISTS `creations` (
+  `id_com_cree` int(10) unsigned NOT NULL,
+  `id_com_affectee` int(10) unsigned NOT NULL,
+  `mode` varchar(50) NOT NULL,
+  `date` date NOT NULL,
+  KEY `FK_creations_communes` (`id_com_cree`) USING BTREE,
+  KEY `FK_creations_communes_2` (`id_com_affectee`) USING BTREE,
+  CONSTRAINT `FK_creations_communes` FOREIGN KEY (`id_com_cree`) REFERENCES `communes` (`id`),
+  CONSTRAINT `FK_creations_communes_2` FOREIGN KEY (`id_com_affectee`) REFERENCES `communes` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 -- Data exporting was unselected.
+
+-- Dumping structure for table projet_humanite.fusions
+CREATE TABLE IF NOT EXISTS `fusions` (
+  `id_nouv_com` int(10) unsigned NOT NULL,
+  `id_reuni_com` int(10) unsigned NOT NULL,
+  `date` date NOT NULL,
+  KEY `FK__communes` (`id_nouv_com`) USING BTREE,
+  KEY `FK__communes_2` (`id_reuni_com`) USING BTREE,
+  CONSTRAINT `FK__communes` FOREIGN KEY (`id_nouv_com`) REFERENCES `communes` (`id`),
+  CONSTRAINT `FK__communes_2` FOREIGN KEY (`id_reuni_com`) REFERENCES `communes` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Data exporting was unselected.
+
+-- Dumping structure for table projet_humanite.modifications
+CREATE TABLE IF NOT EXISTS `modifications` (
+  `id_ancien` int(10) unsigned NOT NULL,
+  `id_nouveau` int(10) unsigned NOT NULL,
+  `date` date NOT NULL,
+  KEY `FK_modifications_communes` (`id_ancien`),
+  KEY `FK_modifications_communes_2` (`id_nouveau`),
+  CONSTRAINT `FK_modifications_communes` FOREIGN KEY (`id_ancien`) REFERENCES `communes` (`id`),
+  CONSTRAINT `FK_modifications_communes_2` FOREIGN KEY (`id_nouveau`) REFERENCES `communes` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Data exporting was unselected.
 
