@@ -8,10 +8,10 @@ cnx = mysql.connector.connect(user='root', password='chop1234',
 
 # Create a cursor object
 cursor = cnx.cursor()
-# cursor.execute("ALTER TABLE communes AUTO_INCREMENT = 0;")
+cursor.execute("ALTER TABLE communes AUTO_INCREMENT = 0;")
 
 # Insert the data into the database
-with open('communes.json', 'r') as f:
+with open('./data/communes.json', 'r') as f:
     communes = json.load(f)
 
 for commune in communes:
@@ -23,7 +23,7 @@ for commune in communes:
     cursor.execute(add_commune, data_commune)
 
 # Insert the data into the database
-with open('final_fusion_data.json', 'r') as f:
+with open('./data/fusions_data.json', 'r') as f:
     final_fusion_data = json.load(f)
 
 for data in final_fusion_data:
@@ -41,7 +41,7 @@ for data in final_fusion_data:
                        (id_nouv_com, id_reuni_com, data['Date']))
 
 # Insert the creation data into the database
-with open('creation_data.json', 'r') as f:
+with open('./data/creations_data.json', 'r') as f:
     creation_data = json.load(f)
 
 for data in creation_data:
@@ -60,7 +60,7 @@ for data in creation_data:
 
 
 # Insert the modification data into the database
-with open('modification_data.json', 'r') as f:
+with open('./data/modifications_data.json', 'r') as f:
     modification_data = json.load(f)
 
 for data in modification_data:

@@ -24,6 +24,7 @@
   font-size: 1.5rem;
 }
 body {
+  height: 100vh;
   background-image: url('../public/images/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;

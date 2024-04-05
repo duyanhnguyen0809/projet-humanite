@@ -4,6 +4,8 @@ import re
 from unidecode import unidecode
 from urllib.parse import quote
 import json
+from datetime import datetime
+import locale
 
 url = "https://fr.wikipedia.org/wiki/Liste_des_anciennes_communes_des_Alpes-Maritimes"
 
@@ -13,6 +15,20 @@ response = requests.get(url)
 # Create a BeautifulSoup object from the HTML content
 soup = BeautifulSoup(response.content, "html.parser")
 
+def convert_date(date_str):
+    # If the date string only contains a year
+    if re.match(r'^\d{4}$', date_str):
+        return datetime.strptime(date_str, '%Y').strftime('%Y-01-01')
+    # If the date string is in the format 'day month year'
+    elif re.match(r'^\d{1,2} \w+ \d{4}$', date_str):
+        locale.setlocale(locale.LC_TIME, "fr_FR")
+        return datetime.strptime(date_str, '%d %B %Y').strftime('%Y-%m-%d')
+    # If the date string is already in the format 'day/month/year'
+    elif re.match(r'^\d{1,2}/\d{1,2}/\d{4}$', date_str):
+        return datetime.strptime(date_str, '%d/%m/%Y').strftime('%Y-%m-%d')
+    else:
+        return None
+    
 # Find the section containing the fusion data
 fusion_section = soup.find("span", id="Fusions").find_next("table")
 
@@ -93,10 +109,13 @@ for i in range(len(final_fusion_data)):
 for i in range(len(final_fusion_data)):
     final_fusion_data[i] = {
         unidecode(k): v for k, v in final_fusion_data[i].items()}
+for data in final_fusion_data:
+    if 'Date' in data:
+        data['Date'] = convert_date(data['Date'])
 
-# for data in final_fusion_data:
-#     print(data)
-with open('final_fusion_data.json', 'w') as f:
+for data in final_fusion_data:
+    print(data)
+with open('./data/fusions_data.json', 'w') as f:
     json.dump(final_fusion_data, f)
 
 # Find the section containing the creation data
@@ -135,7 +154,9 @@ for i in range(len(creation_data)):
 
 for i in range(len(creation_data)):
     creation_data[i] = {unidecode(k): v for k, v in creation_data[i].items()}
+
 grouped_creation_data = {}
+
 for data in creation_data:
     if 'Commune affectee' in data and 'Mode de creation' in data and 'Date' in data:
         key = (data['Commune affectee'],
@@ -175,9 +196,13 @@ for i in range(len(creation_data)):
 
 # Remove None values from creation_data
 creation_data = [data for data in creation_data if data is not None]
-# for data in creation_data:
-#     print(data)
-with open('creation_data.json', 'w') as f:
+
+for data in creation_data:
+    if 'Date' in data:
+        data['Date'] = convert_date(data['Date'])
+for data in creation_data:
+    print(data)
+with open('./data/creations_data.json', 'w') as f:
     json.dump(creation_data, f)
 
 # Find the section containing the modification data
@@ -230,10 +255,14 @@ for i in range(len(modification_data)):
     else:
         print(f"Date not found for modification {modification_data[i]}.")
         continue
+for data in modification_data:
+    if 'Date' in data:
+        data['Date'] = convert_date(data['Date'])
 
 for data in modification_data:
     print(data)
-with open('modification_data.json', 'w') as f:
+
+with open('./data/modifications_data.json', 'w') as f:
     json.dump(modification_data, f)
 
 communes = set()
@@ -338,21 +367,17 @@ def get_coordinates(url):
 
     return latitude, longitude
 
-for i in range(len(communes)):
-    url = communes[i]['url']
-    lat, lon = get_coordinates(url)
-    communes[i]['lat'] = lat
-    communes[i]['lon'] = lon
+# for i in range(len(communes)):
+#     url = communes[i]['url']
+#     lat, lon = get_coordinates(url)
+#     communes[i]['lat'] = lat
+#     communes[i]['lon'] = lon
 
-# Save the list of commune names with URLs and coordinates to a JSON file
-with open('communes.json', 'w') as f:
-    json.dump(communes, f)
+# # Save the list of commune names with URLs and coordinates to a JSON file
+# with open('communes.json', 'w') as f:
+#     json.dump(communes, f)
 
 # # Print the list of commune names with URLs and coordinates
 # for commune in communes:
 #     print(commune)
-
-# Load the JSON file
-with open('communes.json', 'r') as file:
-    data = json.load(file)
 

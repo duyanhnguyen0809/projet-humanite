@@ -1,0 +1,192 @@
+[
+    {
+        "Ancien nom": "Saint-\u00c9tienne",
+        "Nouveau nom": "Saint-\u00c9tienne-de-Tin\u00e9e",
+        "Date": "1889-09-10"
+    },
+    {
+        "Ancien nom": "Saint-Martin-Lantosque",
+        "Nouveau nom": "Saint-Martin-V\u00e9subie",
+        "Date": "1889-10-29"
+    },
+    {
+        "Ancien nom": "Roquebrune",
+        "Nouveau nom": "Cabb\u00e9-Roquebrune",
+        "Date": "1890-12-15"
+    },
+    {
+        "Ancien nom": "Tourrette",
+        "Nouveau nom": "Tourrette-Levens",
+        "Date": "1891-07-28"
+    },
+    {
+        "Ancien nom": "Berre",
+        "Nouveau nom": "Berre-des-Alpes",
+        "Date": "1892-10-21"
+    },
+    {
+        "Ancien nom": "Saint-Laurent",
+        "Nouveau nom": "Saint-Laurent-du-Var",
+        "Date": "1893-10-04"
+    },
+    {
+        "Ancien nom": "Tourrettes-de-Vence",
+        "Nouveau nom": "Tourrettes-sur-Loup",
+        "Date": "1894-01-27"
+    },
+    {
+        "Ancien nom": "Saint-Jean",
+        "Nouveau nom": "Saint-Jean-Cap-Ferrat",
+        "Date": "1907-07-27"
+    },
+    {
+        "Ancien nom": "La Boll\u00e8ne",
+        "Nouveau nom": "La Boll\u00e8ne-V\u00e9subie",
+        "Date": "1908-06-15"
+    },
+    {
+        "Ancien nom": "Beaulieu",
+        "Nouveau nom": "Beaulieu-sur-Mer",
+        "Date": "1908-11-13"
+    },
+    {
+        "Ancien nom": "Tou\u00ebt-de-Beuil",
+        "Nouveau nom": "Tou\u00ebt-sur-Var",
+        "Date": "1909-11-12"
+    },
+    {
+        "Ancien nom": "Cabb\u00e9-Roquebrune",
+        "Nouveau nom": "Roquebrune-Cap-Martin",
+        "Date": "1913-04-05"
+    },
+    {
+        "Ancien nom": "Saint-Paul-du-Var",
+        "Nouveau nom": "Saint-Paul",
+        "Date": "1913-04-12"
+    },
+    {
+        "Ancien nom": "La Roquette",
+        "Nouveau nom": "La Roquette-sur-Siagne",
+        "Date": "1916-09-25"
+    },
+    {
+        "Ancien nom": "Cagnes",
+        "Nouveau nom": "Cagnes-sur-Mer",
+        "Date": "1922-12-20"
+    },
+    {
+        "Ancien nom": "La Colle",
+        "Nouveau nom": "La Colle-sur-Loup",
+        "Date": "1926-09-26"
+    },
+    {
+        "Ancien nom": "Villars-du-Var",
+        "Nouveau nom": "Villars-sur-Var",
+        "Date": "1931-10-31"
+    },
+    {
+        "Ancien nom": "Saint-C\u00e9zaire",
+        "Nouveau nom": "Saint-C\u00e9zaire-sur-Siagne",
+        "Date": "1933-12-29"
+    },
+    {
+        "Ancien nom": "Roquefort",
+        "Nouveau nom": "Roquefort-les-Pins",
+        "Date": "1933-12-29"
+    },
+    {
+        "Ancien nom": "Revest",
+        "Nouveau nom": "Revest-les-Roches",
+        "Date": "1933-12-29"
+    },
+    {
+        "Ancien nom": "B\u00e9zaudun",
+        "Nouveau nom": "B\u00e9zaudun-les-Alpes",
+        "Date": "1933-12-29"
+    },
+    {
+        "Ancien nom": "Auribeau",
+        "Nouveau nom": "Auribeau-sur-Siagne",
+        "Date": "1933-12-29"
+    },
+    {
+        "Ancien nom": "Breil",
+        "Nouveau nom": "Breil-sur-Roya",
+        "Date": "1936-03-18"
+    },
+    {
+        "Ancien nom": "La Croix",
+        "Nouveau nom": "La Croix-sur-Roudoule",
+        "Date": "1937-12-11"
+    },
+    {
+        "Ancien nom": "La Trinit\u00e9-Victor",
+        "Nouveau nom": "La Trinit\u00e9",
+        "Date": "1950-01-01"
+    },
+    {
+        "Ancien nom": "Saint-Vallier",
+        "Nouveau nom": "Saint-Vallier-de-Thiey",
+        "Date": "1957-05-17"
+    },
+    {
+        "Ancien nom": "Saint-Sauveur",
+        "Nouveau nom": "Saint-Sauveur-sur-Tin\u00e9e",
+        "Date": "1957-05-17"
+    },
+    {
+        "Ancien nom": "Le Bar",
+        "Nouveau nom": "Le Bar-sur-Loup",
+        "Date": "1961-03-27"
+    },
+    {
+        "Ancien nom": "Ch\u00e2teauneuf",
+        "Nouveau nom": "Ch\u00e2teauneuf-de-Contes",
+        "Date": "1961-11-10"
+    },
+    {
+        "Ancien nom": "La Roquette",
+        "Nouveau nom": "La Roquette-sur-Var",
+        "Date": "1962-01-22"
+    },
+    {
+        "Ancien nom": "Mandelieu",
+        "Nouveau nom": "Mandelieu-la-Napoule",
+        "Date": "1970-11-25"
+    },
+    {
+        "Ancien nom": "Roquest\u00e9ron-Puget",
+        "Nouveau nom": "Roquest\u00e9ron",
+        "Date": "1985-04-30"
+    },
+    {
+        "Ancien nom": "Villefranche",
+        "Nouveau nom": "Villefranche-sur-Mer",
+        "Date": "1988-03-10"
+    },
+    {
+        "Ancien nom": "Ch\u00e2teauneuf-de-Contes",
+        "Nouveau nom": "Ch\u00e2teauneuf-Villevieille",
+        "Date": "1992-08-05"
+    },
+    {
+        "Ancien nom": "Berre-des-Alpes",
+        "Nouveau nom": "Berre-les-Alpes",
+        "Date": "1997-12-22"
+    },
+    {
+        "Ancien nom": "Saint-Andr\u00e9",
+        "Nouveau nom": "Saint-Andr\u00e9-de-la-Roche",
+        "Date": "2001-02-01"
+    },
+    {
+        "Ancien nom": "Saint-Paul",
+        "Nouveau nom": "Saint-Paul-de-Vence",
+        "Date": "2011-03-22"
+    },
+    {
+        "Ancien nom": "Roquest\u00e9ron-Grasse",
+        "Nouveau nom": "La Roque-en-Provence",
+        "Date": "2015-11-16"
+    }
+]
