@@ -141,20 +141,45 @@ function Creations() {
             alignItems: "center",
           }}
         >
-          <h1 style={{ color: "white" }}>CREATIONS DES COMMUNES</h1>
-          <input
-            type="date"
-            value={startDate}
-            onChange={(e) => setStartDate(e.target.value)}
-            className="date-input"
-          />
-          <input
-            type="date"
-            value={endDate}
-            onChange={(e) => setEndDate(e.target.value)}
-            className="date-input"
-          />
-          <button onClick={handleClick}>Show Changes</button>
+          <h1>CREATIONS DES COMMUNES</h1>
+          <div>
+            <label
+              style={{ color: "white", fontWeight: "bold", fontSize: "1rem" }}
+            >
+              Du :{" "}
+            </label>
+            <input
+              type="date"
+              value={startDate}
+              onChange={(e) => setStartDate(e.target.value)}
+              className="date-input"
+            />
+          </div>
+          <div>
+            <label
+              style={{ color: "white", fontWeight: "bold", fontSize: "1rem" }}
+            >
+              Au :{" "}
+            </label>
+            <input
+              type="date"
+              value={endDate}
+              onChange={(e) => setEndDate(e.target.value)}
+              className="date-input"
+            />
+          </div>
+          <button
+            style={{
+              backgroundColor: "#1dd1a1",
+              color: "white",
+              padding: "10px",
+              borderRadius: "5px",
+              marginTop: "10px",
+            }}
+            onClick={handleClick}
+          >
+            Show Changes
+          </button>
         </div>
       </div>
 

@@ -139,7 +139,7 @@ function Modifications() {
             alignItems: "center",
           }}
         >
-          <h1 style={{ color: "white" }}>MODIFICATIONS DES COMMUNES</h1>
+          <h1>MODIFICATIONS DES COMMUNES</h1>
 
           <div>
             <label

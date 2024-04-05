@@ -21,3 +21,14 @@
   background-color: #4CAF50;
   color: white;
 }
+
+h1 {
+    font-size: 2rem;
+    color: #eb4d4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
