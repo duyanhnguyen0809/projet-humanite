@@ -165,6 +165,7 @@ function Creations() {
             <tr>
               <th>Commune créée</th>
               <th>Commune affectée</th>
+              <th>Mode</th>
               <th>Date</th>
             </tr>
           </thead>
@@ -180,6 +181,7 @@ function Creations() {
                 <tr key={index}>
                   <td>{newCommune ? newCommune.nom : "Not found"}</td>
                   <td>{reunitedCommune ? reunitedCommune.nom : "Not found"}</td>
+                  <td>{event.mode}</td>
                   <td>{new Date(event.date).toLocaleDateString()}</td>
                 </tr>
               );
